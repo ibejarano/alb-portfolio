@@ -1,10 +1,10 @@
 import React from "react"
 
 const Navbar = ({ siteTitle }) => (
-  <nav class="flex items-center justify-between">
-    <div class="flex items-center justify-center text-3xl font-bold text-true-gray-800">
+  <nav className="h-12 flex items-center justify-between bg-blue-100">
+    <div className="flex items-center justify-center text-3xl font-bold text-true-gray-800">
       <svg
-        class="w-10 h-10 mr-1 text-blue-700"
+        className="w-10 h-10 mr-1 text-blue-700"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -25,10 +25,10 @@ const Navbar = ({ siteTitle }) => (
       </svg>
       {siteTitle}
     </div>
-    <div class="hidden md:flex items-center justify-center antialiased lg:ml-20 pt-1">
+    <div className="hidden md:flex items-center justify-center antialiased lg:ml-20 pt-1">
       <a
         href="#"
-        class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+        class="flex items-center justify-center mr-6 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
       >
         Obras
         <svg
@@ -45,35 +45,21 @@ const Navbar = ({ siteTitle }) => (
             d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
           />
         </svg>
-        {/* <svg
-          class="w-3.5 h-4 ml-2"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
-            d="M19 9l-7 7-7-7"
-          ></path>
-        </svg> */}
       </a>
       <a
         href="#"
-        class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+        className="flex items-center justify-center mr-6 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
       >
         Contacto
       </a>
       <a
         href="#"
-        class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+        className="flex items-center justify-center mr-6 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
       >
         <svg
           width="38"
           height="38"
-          class="w-5 h-10 ml-2"
+          className="w-7 h-7 ml-2"
           viewBox="0 0 38 38"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -86,26 +72,26 @@ const Navbar = ({ siteTitle }) => (
             fill="black"
           />
         </svg>
-        <a
-          href="#"
-          class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+      </a>
+      <a
+        href="#"
+        className="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
+      >
+        <svg
+          width="38"
+          height="38"
+          viewBox="0 0 38 38"
+          className="w-7 h-7 ml-2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            width="38"
-            height="38"
-            viewBox="0 0 38 38"
-            class="w-5 h-10 ml-2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M6.33329 3.16666H31.6666C33.4155 3.16666 34.8333 4.58443 34.8333 6.33333V31.6667C34.8333 33.4156 33.4155 34.8333 31.6666 34.8333H6.33329C4.58439 34.8333 3.16663 33.4156 3.16663 31.6667V6.33333C3.16663 4.58443 4.58439 3.16666 6.33329 3.16666ZM6.33327 6.33333V31.6667H31.6666V6.33333H6.33327ZM17.6273 19.007H20.5833V28.5H23.75V19.007H26.8888V15.8403H23.75V14.25C23.75 13.3755 24.4588 12.6667 25.3333 12.6667H26.9166V9.5H25.3333C22.7099 9.5 20.5833 11.6266 20.5833 14.25V15.8403H17.6273V19.007Z"
-              fill="black"
-            />
-          </svg>
-        </a>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.33329 3.16666H31.6666C33.4155 3.16666 34.8333 4.58443 34.8333 6.33333V31.6667C34.8333 33.4156 33.4155 34.8333 31.6666 34.8333H6.33329C4.58439 34.8333 3.16663 33.4156 3.16663 31.6667V6.33333C3.16663 4.58443 4.58439 3.16666 6.33329 3.16666ZM6.33327 6.33333V31.6667H31.6666V6.33333H6.33327ZM17.6273 19.007H20.5833V28.5H23.75V19.007H26.8888V15.8403H23.75V14.25C23.75 13.3755 24.4588 12.6667 25.3333 12.6667H26.9166V9.5H25.3333C22.7099 9.5 20.5833 11.6266 20.5833 14.25V15.8403H17.6273V19.007Z"
+            fill="black"
+          />
+        </svg>
       </a>
     </div>
   </nav>
