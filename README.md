@@ -29,4 +29,9 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 - Config DigitalOcean account and first deploy
 - Basic layout with Figma
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+
+### 29-Dec-2020
+
+- Implemented some basic layout
+- Added a basic navbar wihout links and hero section
+- Added Sections tabs with Tailwind
