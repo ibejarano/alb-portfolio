@@ -1,8 +1,10 @@
 import React from "react"
+import "../styles/navbar.css"
 
 const Navbar = ({ siteTitle }) => (
-  <nav className="h-12 flex items-center justify-between bg-blue-100">
-    <div className="flex items-center justify-center text-3xl font-bold text-true-gray-800">
+  // <nav className="h-12 flex items-center justify-between bg-blue-100 bg-opacity-40">
+  <nav>
+    <div>
       <svg
         className="w-10 h-10 mr-1 text-blue-700"
         fill="none"
@@ -25,11 +27,8 @@ const Navbar = ({ siteTitle }) => (
       </svg>
       {siteTitle}
     </div>
-    <div className="hidden md:flex items-center justify-center antialiased lg:ml-20 pt-1">
-      <a
-        href="#"
-        class="flex items-center justify-center mr-6 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
-      >
+    <div>
+      <a href="#">
         Obras
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -46,16 +45,9 @@ const Navbar = ({ siteTitle }) => (
           />
         </svg>
       </a>
-      <a
-        href="#"
-        className="flex items-center justify-center mr-6 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
-      >
-        Contacto
-      </a>
-      <a
-        href="#"
-        className="flex items-center justify-center mr-6 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
-      >
+      <a href="#">Bio</a>
+      <a href="#">Contacto</a>
+      <a href="#">
         <svg
           width="38"
           height="38"
@@ -73,10 +65,7 @@ const Navbar = ({ siteTitle }) => (
           />
         </svg>
       </a>
-      <a
-        href="#"
-        className="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out"
-      >
+      <a href="#">
         <svg
           width="38"
           height="38"

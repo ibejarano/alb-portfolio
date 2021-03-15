@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 50px;
+  background: lightblue;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+nav div a {
+  margin: 0 1em;
+}
+
+nav div svg {
+  width: 1.3em;
+  height: 1.3em;
+}
