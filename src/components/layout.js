@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Navbar from './navbar'
+import Navbar from "./navbar"
 
+import "./clean.css"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,23 +26,17 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Navbar  siteTitle='Titulo'  />
-      <div
+    <div className="main-container">
+      <Navbar siteTitle="Titulo" />
+      {children}
+      <footer
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          marginTop: `2rem`,
         }}
       >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()} {data.site.siteMetadata?.title}
-        </footer>
-      </div>
-    </>
+        © {new Date().getFullYear()} {data.site.siteMetadata?.title}
+      </footer>
+    </div>
   )
 }
 
