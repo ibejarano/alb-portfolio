@@ -1,57 +1,24 @@
 import React from "react"
+import "../styles/sections.css"
 
 export default function Sections() {
   return (
-    <div className="min-h-screen min-w-full bg-purple-100 flex flex-col justify-center p-5">
-      <div className="w-full flex flex-row">
-        {/* <div className="flex flex-row flex-wrap justify-center h-full px-2 py-2 bg-white shadow-lg rounded"> */}
-        {contentA.map(({ text, offset }, ind) => (
-          <TabContent key={ind} offset={offset} text={text} />
-        ))}
+    <div className="sections-container">
+      <div className="column-1">
+        <img src={`pic-1.png`} alt="imagen A"></img>
       </div>
-    </div>
-  )
-}
-
-const contentA = [
-  {
-    title: "seccion A",
-    text: "Contenido seccion A ",
-    offset: 10,
-  },
-  {
-    title: "seccion B",
-    text: "Contenido seccion B",
-    offset: 24,
-  },
-  {
-    title: "seccion C",
-    text: "Contenido seccion C",
-    offset: 60,
-  },
-]
-
-const contentB = [
-  {
-    title: "seccion D",
-    text: "Contenido seccion D ",
-  },
-  {
-    title: "seccion E",
-    text: "Contenido seccion E",
-  },
-  {
-    title: "seccion F",
-    text: "Contenido eccion F",
-  },
-]
-
-const TabContent = ({ text, offset }) => {
-  return (
-    <div
-      className={`block text-white bg-indigo-600 h-2/6 shadow-lg rounded p-16 m-4  animate-carrousel transform translate-x-${offset}`}
-    >
-      <p>{text}</p>
+      <div className="column-2">
+        <img src={`pic-2.png`} alt="imagen B"></img>
+        <img src={`pic-3.png`} alt="imagen C"></img>
+      </div>
+      <div className="column-3">
+        <img src={`pic-4.png`} alt="imagen D"></img>
+        <img src={`pic-5.png`} alt="imagen E"></img>
+      </div>
+      <div className="column-4">
+        <img src={`pic-2.png`} alt="imagen B"></img>
+        <img src={`pic-3.png`} alt="imagen C"></img>
+      </div>
     </div>
   )
 }
