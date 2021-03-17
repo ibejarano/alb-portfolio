@@ -29,13 +29,13 @@ const Layout = ({ children }) => {
     <div className="main-container">
       <Navbar siteTitle="Titulo" />
       {children}
-      <footer
+      {/* <footer
         style={{
           marginTop: `2rem`,
         }}
       >
         © {new Date().getFullYear()} {data.site.siteMetadata?.title}
-      </footer>
+      </footer> */}
     </div>
   )
 }
