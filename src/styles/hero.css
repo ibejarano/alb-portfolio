@@ -3,7 +3,7 @@
   margin: 0;
   height: 100vh;
   width: 100%;
-  background: url("public/ana-background.png");
+  background: url("../images/ana-background.png");
   background-repeat: no-repeat;
   padding: 10em;
   background-size: cover;
