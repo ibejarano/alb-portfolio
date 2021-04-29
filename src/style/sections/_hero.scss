@@ -47,6 +47,31 @@
     }
   }
 
+  .hero-title__secondary {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    background: rgba(100,255,255,0.4);
+    border-radius: 2rem;
+    color: dodgerblue ;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
   .hero-cta {
     display: flex;
 

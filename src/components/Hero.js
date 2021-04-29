@@ -5,7 +5,7 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
 
-const Hero = () => {
+const Hero = ({ children }) => {
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
@@ -23,11 +23,13 @@ const Hero = () => {
 
   return (
     <BackgroundImage
-      style={{ height: "100vh" }}
+      id="hero"
       Tag="section"
       {...bgImage}
       preserveStackingContext
-    />
+    >
+      {children}
+    </BackgroundImage>
   )
 }
 

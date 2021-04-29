@@ -19,8 +19,10 @@ const Layout = ({ children }) => {
   return (
     <div className="main-container">
       <Navbar siteTitle="Ana Laura Blanco" />
-      <Hero />
-      {children}
+      <Hero>
+        <h1 className="hero-title">Hola! Aqui podria ir un mejor titulo</h1>
+        <h1 className="hero-title__secondary">O con algun fondo transparente</h1>
+      </Hero>
       {/* <footer
         style={{
           marginTop: `2rem`,  
