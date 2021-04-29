@@ -1,17 +1,14 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Hero from "../components/hero"
-import Sections from "../components/sections"
-import SectionsOption from "../components/sections-option"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
+
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../style/main.scss"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
-    <Sections />
-    <SectionsOption />
   </Layout>
 )
 
