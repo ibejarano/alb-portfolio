@@ -18,9 +18,8 @@ const Layout = ({ children }) => {
 
   return (
     <div className="main-container">
-      <Hero>
-        <Navbar siteTitle="Ana Laura Blanco" />
-      </Hero>
+      <Navbar siteTitle="Ana Laura Blanco" />
+      <Hero />
       {children}
       {/* <footer
         style={{

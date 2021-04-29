@@ -3,25 +3,35 @@ import { Navbar, Nav } from "react-bootstrap"
 import logo from "./logo.svg"
 
 const NavbarComponent = ({ siteTitle }) => (
-  <Navbar bg="light" className="justify-content-between">
-    <Navbar.Brand href="#home">
-      <img
-        src={logo}
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-        alt="Logo Ana Laura Blanco"
-      />
+  <Navbar
+    className="justify-content-between"
+    style={{
+      position: "absolute",
+      background: "transparent",
+      width: "100%",
+    }}
+  >
+    <Navbar.Brand
+      href="#home"
+      className="text-white"
+      style={{ fontSize: "30px" }}
+    >
       {siteTitle}
     </Navbar.Brand>
     <Nav>
-      <Nav.Link href="#home">Obras</Nav.Link>
-      <Nav.Link href="#features">Bio</Nav.Link>
-      <Nav.Link href="#pricing">Contacto</Nav.Link>
-      <Nav.Link href="#pricing">
+      <Nav.Link className="text-white h1 mr-4" href="#home">
+        Obras
+      </Nav.Link>
+      <Nav.Link className="text-white h1 mr-4" href="#features">
+        Bio
+      </Nav.Link>
+      <Nav.Link className="text-white h1 mr-4" href="#pricing">
+        Contacto
+      </Nav.Link>
+      <Nav.Link className="text-white" href="#pricing">
         <svg
-          width="38"
-          height="38"
+          width="30"
+          height="30"
           viewBox="0 0 38 38"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -35,8 +45,8 @@ const NavbarComponent = ({ siteTitle }) => (
       </Nav.Link>
       <Nav.Link href="#pricing">
         <svg
-          width="38"
-          height="38"
+          width="30"
+          height="30"
           viewBox="0 0 38 38"
           className="w-7 h-7 ml-2"
           fill="none"

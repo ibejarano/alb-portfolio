@@ -21,7 +21,14 @@ const Hero = () => {
   const image = getImage(placeholderImage)
   const bgImage = convertToBgImage(image)
 
-  return <BackgroundImage Tag="section" {...bgImage} preserveStackingContext />
+  return (
+    <BackgroundImage
+      style={{ height: "100vh" }}
+      Tag="section"
+      {...bgImage}
+      preserveStackingContext
+    />
+  )
 }
 
 export default Hero
