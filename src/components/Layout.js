@@ -1,28 +1,24 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "./Navbar"
-import Hero from "./Hero"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <div className="main-container">
       <Navbar siteTitle="Ana Laura Blanco" />
-      <Hero>
-        <h1 className="hero-title">Hola! Aqui podria ir un mejor titulo</h1>
-        <h1 className="hero-title__secondary">O con algun fondo transparente</h1>
-      </Hero>
+      {children}
       {/* <footer
         style={{
           marginTop: `2rem`,  

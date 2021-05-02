@@ -1,6 +1,6 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
-import logo from "./logo.svg"
+// import logo from "./logo.svg"
 
 const NavbarComponent = ({ siteTitle }) => (
   <Navbar
@@ -9,6 +9,7 @@ const NavbarComponent = ({ siteTitle }) => (
       position: "absolute",
       background: "transparent",
       width: "100%",
+      zIndex: "2",
     }}
   >
     <Navbar.Brand
