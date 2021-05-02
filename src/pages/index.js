@@ -12,8 +12,13 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Hero>
       <h1 className="hero-title">Hola! Aqui podria ir un mejor titulo</h1>
-      <h1 className="hero-title__secondary">O con algun fondo transparente</h1>
-      <button className="cta-btn cta-btn--hero">Clickeame</button>
+      <h1 className="hero-title__secondary">Titulo con otro fondo</h1>
+      <section>
+        <button className="cta-btn cta-btn--hero">Reggae</button>
+        <button className="cta-btn cta-btn--hero">Magia</button>
+        <button className="cta-btn cta-btn--hero">Tango</button>
+        <button className="cta-btn cta-btn--hero">Samba</button>
+      </section>
     </Hero>
   </Layout>
 )

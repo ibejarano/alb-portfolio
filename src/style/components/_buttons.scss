@@ -7,6 +7,7 @@
   line-height: 1;
   z-index: 1;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  margin: auto 2rem;
 
   &::after {
     content: '';
@@ -27,10 +28,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  border-image-slice: 1;
+  // border-style: solid;
+  border-radius: 24px;
+  border: 3px solid #00cdac;
   cursor: pointer;
+  font-size: 36px;
   // Responsive Button hero style
   @include respond(phone) {
     background-image: none;
@@ -41,6 +43,8 @@
   &::after {
     background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
     // Responsive Button hero style
+      border-radius: 20px;
+
     @include respond(phone) {
       background-image: none;
     }
